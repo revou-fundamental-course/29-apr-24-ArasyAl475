@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU Assignments</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+  <header class="navigation">
+    <div>
+      <img src="assets/logo.png" alt="Logo">
+    </div>
+
+    <nav>
+      <button>Home</button>
+      <button>About</button>
+      <button>Project</button>
+    </nav>
+  </header>
+  <hr>
+
+  <main>
+    <article class="main-content">
+        <div class="items">
+          <div class="item1">
+            <h2>Arasy Al Kautsar Panji. Seorang Raja Iblis yang sedang mengejar cita citanya menjadi Full-Stack Developer</h2>
+          </div>
+          <div class="item2">
+            <h2>Penjelasan lainnya tentang Arasy Al Kautsar Panji</h2>
+          </div>
+        </div>
+        <aside class="contact">
+          <header>
+            <h2>Contact Me</h2>
+            <h3>Let's get in touch. Send me a message:</h3>
+          </header><br>
+          <section class="form">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="package">Package:</label><br> 
+            <select id="package" name="package" required>
+              <option value="basic">Basic</option>
+              <option value="pro">Pro</option>
+            </select><br><br>
+            <input type="submit" value="Send">
+          </section>
+        </aside>
+      </article>
+</main>
 </body>
 </html>
