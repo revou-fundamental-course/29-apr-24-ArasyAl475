@@ -15,27 +15,30 @@
     </div>
 
     <nav>
-      <button>Home</button>
-      <button>About</button>
-      <button>Plane</button>
+      <button href="#home">Home</button>
+      <button href="#about">About</button>
+      <button href="#harga">Plane</button>
     </nav>
   </header>
   <hr>
 
   <main>
-    <div class="header">
+    <div class="header" id="home">
       <h1>Arasy Al Kautsar Panji | Portfolio</h1>
       <h3>Photographer and Web Designer</h3>
     </div>
+    
+     <!-- Tambahkan elemen slider-container di sini -->
+
     <article class="main-content">
       <div class="items">
         <div class="item1">
           <div class="project-container">
             <p>My Projects</p>
-            <img src="assets/projek.png" alt="">
+            <div class="slider-container"></div>
           </div>
         </div>
-        <div class="item2">
+        <div class="item2" id="about">
           <div class="profil">
             <img src="assets/gweh.png" alt="Profile Picture">
             <div class="gweh">
@@ -93,7 +96,7 @@
       </div>
     </div>
 
-    <div class="plan">
+    <div class="plan" id="harga">
       <h1>My Price</h1>
 
       <div class="plans">
@@ -136,5 +139,6 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

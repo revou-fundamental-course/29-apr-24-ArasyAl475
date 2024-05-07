@@ -63,16 +63,6 @@ body {
   background-color: #d4dbe290;
 }
 
-.item1 img {
-  width: 800px;
-  height: 340px;
-  border-radius: 2px;
-  padding-top: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
-  border-radius: 7px;
-}
-
 .project-container {
   display: flex;
   flex-direction: column;
@@ -372,3 +362,122 @@ ul {
 .footer p {
   margin: 0;
 }
+
+
+/* penambahan responsif */
+@media only screen and (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .items {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .item1 {
+      height: auto;
+      margin: 17px 0;
+    }
+  
+    .item1 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item2 {
+      margin: 9px 0;
+    }
+  
+    .profil {
+      padding-left: 0;
+      word-wrap: break-word; /* Tambahkan properti ini */
+    }
+  
+    .contact {
+      width: 100%;
+      margin: 17px 0;
+    }
+  
+    select {
+      width: 100%;
+    }
+  
+    .my-skills,
+    .plan {
+      margin: 17px 0;
+    }
+  
+    .plans {
+      flex-direction: column;
+    }
+  
+    .basic,
+    .pro {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .navigation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navigation > nav {
+      margin-top: 10px;
+    }
+  
+    .logo {
+      margin: 0;
+    }
+  
+    .header > h1 {
+      font-size: 24px;
+    }
+  
+    .header > h3 {
+      font-size: 16px;
+    }
+  
+    .items {
+      margin: 0;
+    }
+  
+    .item1 img {
+      width: 100%;
+    }
+  
+    .item2 {
+      padding-left: 0;
+      padding-right: 0;
+      margin: 9px 0;
+    }
+  
+    .profil img {
+      margin-right: 0;
+    }
+  
+    .profil {
+      padding: 20px;
+      word-wrap: break-word;
+    }
+  
+    .contact {
+      margin: 0;
+    }
+  
+    .plan {
+      padding: 10px;
+    }
+  
+    .basic,
+    .pro {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+  
