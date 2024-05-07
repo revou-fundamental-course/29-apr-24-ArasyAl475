@@ -1,54 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RevoU Assignments</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
   <header class="navigation">
-    <div>
+    <div class="logo">
       <img src="assets/logo.png" alt="Logo">
     </div>
 
     <nav>
       <button>Home</button>
       <button>About</button>
-      <button>Project</button>
+      <button>Plane</button>
     </nav>
   </header>
   <hr>
 
   <main>
+    <div class="header">
+      <h1>Arasy Al Kautsar Panji | Portfolio</h1>
+      <h3>Photographer and Web Designer</h3>
+    </div>
     <article class="main-content">
-        <div class="items">
-          <div class="item1">
-            <h2>Arasy Al Kautsar Panji. Seorang Raja Iblis yang sedang mengejar cita citanya menjadi Full-Stack Developer</h2>
-          </div>
-          <div class="item2">
-            <h2>Penjelasan lainnya tentang Arasy Al Kautsar Panji</h2>
+      <div class="items">
+        <div class="item1">
+          <div class="project-container">
+            <p>My Projects</p>
+            <img src="assets/projek.png" alt="">
           </div>
         </div>
-        <aside class="contact">
-          <header>
-            <h2>Contact Me</h2>
-            <h3>Let's get in touch. Send me a message:</h3>
-          </header><br>
-          <section class="form">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="package">Package:</label><br> 
-            <select id="package" name="package" required>
-              <option value="basic">Basic</option>
-              <option value="pro">Pro</option>
-            </select><br><br>
-            <input type="submit" value="Send">
-          </section>
-        </aside>
-      </article>
-</main>
+        <div class="item2">
+          <div class="profil">
+            <img src="assets/gweh.png" alt="Profile Picture">
+            <div class="gweh">
+              <h1>Arasy Al Kautsar Panji</h1>
+              <p>Seorang Raja Iblis</p>
+            </div>
+            <div class="additional-info">
+              <p>Arasy Al Kautsar Panji, panggil saja Al. Seorang Full-Stack Developer yang sedang mengejar cita
+                citanya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="contact">
+        <header>
+          <h2>Contact Me</h2>
+          <h3>Let's get in touch. Send me a message:</h3>
+        </header><br>
+        <section class="form">
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="Subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" required><br>
+          <label for="package">Package:</label><br>
+          <select id="package" name="package" required>
+            <option value="basic">Basic</option>
+            <option value="pro">Pro</option>
+          </select><br><br>
+          <input type="submit" value="Send">
+        </section>
+      </aside>
+    </article>
+    <br>
+    <hr>
+
+    <div class="my-skills">
+      <h1>My Skills</h1>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar html"></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar css"></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar javascript"></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Web Server</div>
+        <div class="skill-bar web-server"></div>
+      </div>
+    </div>
+
+    <div class="plan">
+      <h1>My Price</h1>
+
+      <div class="plans">
+        <div class="basic">
+          <h2>Basic</h2>
+          <ul>
+            <li class="feature-box">Responsive Web Design (1 Page)</li>
+            <li class="feature-box">Social Media Integration</li>
+            <li class="feature-box">Studio Photography (1 Hour)</li>
+            <li class="feature-box">10 High-Quality Digital Photos</li>
+          </ul>
+          <div class="price">
+            <span>$550</span>
+          </div>
+          <button>Sign Up</button>
+        </div>
+
+        <div class="pro">
+          <h2>Pro</h2>
+          <ul>
+            <li class="feature-box">Responsive Web Design (5 Pages)</li>
+            <li class="feature-box">Social Media Integration</li>
+            <li class="feature-box">Studio Photography (3 Hours)</li>
+            <li class="feature-box">20 High-Quality Digital Photos</li>
+          </ul>
+          <div class="price">
+            <span>$1000</span>
+          </div>
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="assets/logo.png" alt="Logo" class="footer-logo">
+      <p>Terms of Service. Privacy Policy.</p>
+      <p>&copy; ArasyAl</p>
+    </div>
+  </footer>
+
 </body>
 </html>

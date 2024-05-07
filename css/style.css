@@ -1,100 +1,374 @@
 /* style.css */
-
+body {
+  background-color: #f0f8ff;
+}
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 13px 32px;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 32px;
 }
 
 .navigation > nav > button {
-    height: 32px;
-    border: 1px solid gray;
-    background-color: white;
+  height: 32px;
+  border: 1px solid gray;
+  background-color: white;
 }
 
-.content > header {
-    text-align: center;
+.navigation button:hover {
+  background-color: lightgray;
 }
 
-.content > header > h1 {
-    font-family: system-ui;
+.logo {
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-left: 20px;
+  width: 120px;
+  height: 75px;
 }
 
-.content > header > h3 {
-    font-family: segoe ui;
+.header {
+  text-align: center;
+}
+
+.header > h1 {
+  font-family: system-ui;
+}
+
+.header > h3 {
+  font-family: segoe ui;
 }
 
 .main-content {
-    display: flex;
+  display: flex;
 }
 
 .items {
-    width: 70%;
-    display: flex; /* Tambahkan display flex agar item1 dan item2 rapi */
-    flex-direction: column; /* Tambahkan flex direction column agar item1 dan item2 stacked */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 39px;
 }
 
-.item1,
+.item1 {
+  height: 395px;
+  border: 1px;
+  margin: 17px;
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 13px 13px 7px 7px;
+  background-color: #d4dbe290;
+}
+
+.item1 img {
+  width: 800px;
+  height: 340px;
+  border-radius: 2px;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 7px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-container p {
+  margin-bottom: 10px;
+  font-family: Segoe UI;
+  font-weight: bold;
+}
+
+.profil {
+  display: flex;
+  padding-left: 100px;
+}
+
 .item2 {
-    height: 200px;
-    border: 1px solid;
-    margin: 17px;
-    font-family: system-ui;
+  border: 1px solid;
+  margin: 9px 17px;
+  font-family: system-ui;
+  display: flex;
+  align-items: flex-start;
+}
+
+.profil {
+  display: flex;
+  padding: 20px;
+}
+
+.profil img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.gweh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gweh h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gweh p {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.additional-info {
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  margin-left: 20px;
+}
+
+.additional-info p {
+  margin: 0;
 }
 
 .contact {
-    height: 500px;
-    width: 30%;
-    border: 1px;
-    margin: 17px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 39px;
-    background-color: #D4DBE280;
+  height: 545px;
+  width: 30%;
+  border: 1px;
+  margin: 17px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 39px;
+  background-color: #d4dbe280;
 }
 
 .contact h2 {
-    font-family: system-ui;
-    color: #52585E;
+  font-family: system-ui;
+  color: #52585e;
 }
 
 .contact h3 {
-    font-family: Segoe UI;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #B8C0C6;
-    margin: 20px;
+  font-family: Segoe UI;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b8c0c6;
+  margin: 20px;
 }
-  
-  input {
-    display: block;
-    margin-top: 5px;
-    width: 100%;
-    height: 20px;
-    padding: 5px;
-    font-size: 16px;
-  }
 
-  select {
-    margin-top: 5px;
-    width: 107%;
-    height: 35px;
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  input[type="submit"] {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 35px;
-    width: 107%;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: gray;
-  }
+.form label {
+  font-family: system-ui;
+}
+
+input {
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+select {
+  margin-top: 5px;
+  width: 107%;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  width: 107%;
+}
+
+input[type="submit"]:hover {
+  background-color: gray;
+}
+
+.my-skills {
+  border: 1px solid #f0f8ff;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #d4dbe270;
+}
+
+.my-skills h1 {
+  font-family: sans-serif;
+  margin-left: 7px;
+}
+
+.skill {
+  margin-top: 13px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 10px;
+  margin-right: 23px;
+}
+
+.skill-name {
+  width: 100px;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.html {
+  background: linear-gradient(90deg, #808080 80%, #ffffff 80%);
+}
+
+.css {
+  background: linear-gradient(90deg, #808080 33%, #ffffff 33%);
+}
+
+.javascript {
+  background: linear-gradient(90deg, #808080 11%, #ffffff 11%);
+}
+
+.web-server {
+  background: linear-gradient(90deg, #808080 53%, #ffffff 53%);
+}
+
+.my-skills {
+  margin: 17px;
+}
+
+.plan {
+  background-color: #838a9150;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan h1 {
+  text-align: center;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basic,
+.pro {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 48%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basic {
+  margin-right: 2%;
+}
+
+.basic li,
+.pro li {
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.basic li,
+.pro li {
+  font-weight: bold;
+}
+
+.price {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.price span:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price span:last-child {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan button:hover {
+  background-color: lightgray;
+  color: #333;
+}
+
+.plans h2 {
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
