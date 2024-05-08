@@ -9,7 +9,8 @@ body {
 }
 
 .navigation > nav > button {
-  height: 32px;
+  height: 40px;
+  margin-top: -1px;
   border: 1px solid gray;
   background-color: white;
 }
@@ -20,7 +21,7 @@ body {
 
 .logo {
   display: flex;
-  margin-top: -20px;
+  margin-top: -19px;
   margin-bottom: -20px;
   margin-left: 20px;
   width: 120px;
@@ -220,6 +221,7 @@ input[type="submit"]:hover {
   width: 100px;
   text-align: left;
   padding-right: 10px;
+  font-family: system-ui;
 }
 
 .skill-bar {
@@ -235,7 +237,7 @@ input[type="submit"]:hover {
 }
 
 .css {
-  background: linear-gradient(90deg, #808080 33%, #ffffff 33%);
+  background: linear-gradient(90deg, #808080 23%, #ffffff 23%);
 }
 
 .javascript {
@@ -243,7 +245,7 @@ input[type="submit"]:hover {
 }
 
 .web-server {
-  background: linear-gradient(90deg, #808080 53%, #ffffff 53%);
+  background: linear-gradient(90deg, #808080 31%, #ffffff 31%);
 }
 
 .my-skills {
@@ -363,8 +365,6 @@ ul {
   margin: 0;
 }
 
-
-/* penambahan responsif */
 @media only screen and (max-width: 768px) {
     .main-content {
       flex-direction: column;
@@ -392,7 +392,7 @@ ul {
   
     .profil {
       padding-left: 0;
-      word-wrap: break-word; /* Tambahkan properti ini */
+      word-wrap: break-word;
     }
   
     .contact {

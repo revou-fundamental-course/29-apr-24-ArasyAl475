@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RevoU Assignments</title>
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -27,14 +27,12 @@
       <h1>Arasy Al Kautsar Panji | Portfolio</h1>
       <h3>Photographer and Web Designer</h3>
     </div>
-    
-     <!-- Tambahkan elemen slider-container di sini -->
 
     <article class="main-content">
       <div class="items">
         <div class="item1">
           <div class="project-container">
-            <p>My Projects</p>
+            <p>My Projects and Photos</p>
             <div class="slider-container"></div>
           </div>
         </div>
@@ -46,8 +44,7 @@
               <p>Seorang Raja Iblis</p>
             </div>
             <div class="additional-info">
-              <p>Arasy Al Kautsar Panji, panggil saja Al. Seorang Full-Stack Developer yang sedang mengejar cita
-                citanya.</p>
+              <p>Panggil saja Al. Seorang Raja Iblis yang sedang mengejar cita citanya menjadi Full-Stack Developer.</p>
             </div>
           </div>
         </div>
@@ -58,19 +55,23 @@
           <h3>Let's get in touch. Send me a message:</h3>
         </header><br>
         <section class="form">
-          <label for="name">Your Name:</label><br>
-          <input type="text" id="name" name="name" required><br>
-          <label for="email">Email Address:</label><br>
-          <input type="email" id="email" name="email" required><br>
-          <label for="Subject">Subject:</label><br>
-          <input type="text" id="subject" name="subject" required><br>
-          <label for="package">Package:</label><br>
-          <select id="package" name="package" required>
-            <option value="basic">Basic</option>
-            <option value="pro">Pro</option>
-          </select><br><br>
-          <input type="submit" value="Send">
+          <form id="contact-form">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="package">Package:</label><br>
+            <select id="package" name="package" required>
+              <option value="" disabled selected>Select Package</option>
+              <option value="basic">Basic</option>
+              <option value="pro">Pro</option>
+            </select><br><br>
+            <input type="submit" value="Send">
+          </form>
         </section>
+        <div id="form-message"></div>
       </aside>
     </article>
     <br>
@@ -103,10 +104,10 @@
         <div class="basic">
           <h2>Basic</h2>
           <ul>
-            <li class="feature-box">Responsive Web Design (1 Page)</li>
-            <li class="feature-box">Social Media Integration</li>
-            <li class="feature-box">Studio Photography (1 Hour)</li>
-            <li class="feature-box">10 High-Quality Digital Photos</li>
+            <li>Responsive Web Design (1 Page)</li>
+            <li>Social Media Integration</li>
+            <li>Studio Photography (1 Hour)</li>
+            <li>10 High-Quality Digital Photos</li>
           </ul>
           <div class="price">
             <span>$550</span>
@@ -117,10 +118,10 @@
         <div class="pro">
           <h2>Pro</h2>
           <ul>
-            <li class="feature-box">Responsive Web Design (5 Pages)</li>
-            <li class="feature-box">Social Media Integration</li>
-            <li class="feature-box">Studio Photography (3 Hours)</li>
-            <li class="feature-box">20 High-Quality Digital Photos</li>
+            <li>Responsive Web Design (5 Pages)</li>
+            <li>Social Media Integration</li>
+            <li>Studio Photography (3 Hours)</li>
+            <li>20 High-Quality Digital Photos</li>
           </ul>
           <div class="price">
             <span>$1000</span>
@@ -140,5 +141,6 @@
   </footer>
 
   <script src="js/script.js"></script>
+
 </body>
 </html>
