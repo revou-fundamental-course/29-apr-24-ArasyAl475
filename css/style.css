@@ -84,7 +84,7 @@ body {
 
 .item2 {
   border: 1px solid;
-  margin: 9px 17px;
+  margin: 9px 20px;
   font-family: system-ui;
   display: flex;
   align-items: flex-start;
@@ -127,7 +127,7 @@ body {
 .additional-info {
   padding: 20px;
   border-left: 1px solid #ccc;
-  margin-left: 20px;
+  margin-left: 20px; /* Sama dengan properti padding item1 */
 }
 
 .additional-info p {
@@ -344,7 +344,7 @@ ul {
 }
 
 .footer {
-  background-color: #52585E;
+  background-color: #52585e;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -366,136 +366,107 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-    .main-content {
-      flex-direction: column;
-    }
-  
-    .items {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-  
-    .item1 {
-      height: auto;
-      margin: 17px 0;
-    }
-  
-    .item1 img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .item2 {
-      margin: 9px 0;
-    }
-  
-    .profil {
-      padding-left: 0;
-      word-wrap: break-word;
-    }
-  
-    .contact {
-      width: 100%;
-      margin: 17px 0;
-    }
-  
-    select {
-      width: 100%;
-    }
-  
-    .my-skills,
-    .plan {
-      margin: 17px 0;
-    }
-  
-    .plans {
-      flex-direction: column;
-    }
-  
-    .basic,
-    .pro {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
+  .main-content {
+    flex-direction: column;
   }
-  
-  @media only screen and (max-width: 480px) {
-    .navigation {
-      flex-direction: column;
-      align-items: center;
-      min-width: 480px;
-    }
-  
-    .navigation > nav {
-      margin-top: 10px;
-    }
-  
-    .logo {
-      margin: 0;
-    }
-  #home {
-    min-width: 480px;
-  }
-    .header > h1 {
-      font-size: 24px;
-    }
-  
-    .header > h3 {
-      font-size: 16px;
-    }
-  
-    .items {
-      margin: 0;
-    }
 
-    .items {
-      display: flex;
-      flex-wrap: wrap;
-      overflow-wrap: break-word;
+  .items {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  
-    .item1 img {
-      width: 100%;
-    }
-  
-    .item2 {
-      padding-left: 0;
-      padding-right: 0;
-      margin: 9px 0;
-    }
-  
-    .profil img {
-      margin-right: 0;
-    }
-  
-    .profil {
-      padding: 20px;
-      word-wrap: break-word;
-      min-width: 480px;
-    }
-  
-    .contact {
-      margin: 0;
-      min-width: 480px;
-    }
-    .my-skills {
-      min-width: 480px;
-    }
-    .plan {
-      padding: 10px;
-      min-width: 480px;
-    }
-  
-    .basic,
-    .pro {
-      width: 100%;
-      margin: 0 0 10px 0;
-    }
 
-    .footer {
-      min-width: 480px;
-    }
+  .item1 {
+    height: auto;
+    margin: 17px 0;
   }
-  
+
+  .item1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .item2 {
+    margin: 9px 0;
+  }
+
+  .profil {
+    padding-left: 0;
+    word-wrap: break-word;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 17px 0;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .my-skills,
+  .plan {
+    margin: 17px 0;
+  }
+
+  .plans {
+    flex-direction: column;
+  }
+
+  .basic,
+  .pro {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .header > h1 {
+    font-size: 20px;
+  }
+
+  .header > h3 {
+    font-size: 14px;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+
+  .item1,
+  .item2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .profil {
+    padding: 10px;
+  }
+
+  .item2 {
+    max-width: 100%;
+  }
+
+  .additional-info {
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+
+  .additional-info p {
+    max-width: calc(100% - 42px);
+  }
+}
