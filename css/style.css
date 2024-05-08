@@ -414,100 +414,97 @@ ul {
 
 @media only screen and (max-width: 480px) {
   .navigation {
-    flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
-    align-items: flex-start; /* Menempatkan elemen dari kiri ke kanan pada layar kecil */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .logo {
-    margin-bottom: 10px; /* Menambahkan ruang antara logo dan menu navbar pada layar kecil */
+    margin-bottom: 10px;
   }
 
-  
   nav {
     display: flex;
   }
-  
+
   nav button {
     margin: 0 10px;
   }
-  
-  /* Untuk gambar profil */
+
   .profil {
     display: flex;
     align-items: center;
   }
-  
+
   .profil img {
     max-width: 100%;
   }
-  
-  /* Untuk konten utama */
+
   .main-content {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .item1, .item2 {
+
+  .item1,
+  .item2 {
     flex: 1;
     padding: 20px;
   }
-  
-  /* Untuk form kontak */
+
   .contact {
     padding: 20px;
   }
-  
+
   .form {
     max-width: 400px;
     margin: auto;
   }
-  
-  /* Untuk kemampuan */
+
   .my-skills {
     padding: 20px;
     text-align: center;
   }
-  
+
   .skill {
     margin-bottom: 20px;
   }
-  
+
   .skill-name {
     margin-bottom: 5px;
   }
-  
+
   .skill-bar {
     height: 20px;
     background-color: lightgray;
   }
-  
-  /* Untuk harga */
+
   .plan {
     padding: 20px;
     text-align: center;
   }
-  
+
   .plans {
     display: flex;
     justify-content: center;
   }
-  
-  .basic, .pro {
+
+  .basic,
+  .pro {
     flex: 1;
     padding: 20px;
     margin: 0 10px;
   }
-  
-  .basic, .pro {
+
+  .basic,
+  .pro {
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-  
-  .basic:hover, .pro:hover {
+
+  .basic:hover,
+  .pro:hover {
     border-color: #666;
   }
-  
-  /* Untuk footer */
+
   .footer {
     text-align: center;
     padding: 20px;
