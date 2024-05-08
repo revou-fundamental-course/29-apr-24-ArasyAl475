@@ -83,11 +83,12 @@ body {
 }
 
 .item2 {
-  border: 1px solid;
+  border: 1px;
   margin: 9px 20px;
   font-family: system-ui;
   display: flex;
   align-items: flex-start;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .profil {
@@ -122,16 +123,6 @@ body {
 .gweh p {
   margin: 5px 0;
   font-style: italic;
-}
-
-.additional-info {
-  padding: 20px;
-  border-left: 1px solid #ccc;
-  margin-left: 20px; /* Sama dengan properti padding item1 */
-}
-
-.additional-info p {
-  margin: 0;
 }
 
 .contact {
@@ -423,50 +414,102 @@ ul {
 
 @media only screen and (max-width: 480px) {
   .navigation {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+    align-items: flex-start; /* Menempatkan elemen dari kiri ke kanan pada layar kecil */
   }
 
   .logo {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Menambahkan ruang antara logo dan menu navbar pada layar kecil */
   }
 
-  .header {
-    text-align: center;
+  
+  nav {
+    display: flex;
   }
-
-  .header > h1 {
-    font-size: 20px;
+  
+  nav button {
+    margin: 0 10px;
   }
-
-  .header > h3 {
-    font-size: 14px;
-  }
-
-  .items {
-    flex-direction: column;
-  }
-
-  .item1,
-  .item2 {
-    width: 100%;
-    margin: 10px 0;
-  }
-
+  
+  /* Untuk gambar profil */
   .profil {
-    padding: 10px;
+    display: flex;
+    align-items: center;
   }
-
-  .item2 {
+  
+  .profil img {
     max-width: 100%;
   }
-
-  .additional-info {
-    padding: 20px;
-    border-left: 1px solid #ccc;
+  
+  /* Untuk konten utama */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
   }
-
-  .additional-info p {
-    max-width: calc(100% - 42px);
+  
+  .item1, .item2 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Untuk form kontak */
+  .contact {
+    padding: 20px;
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* Untuk kemampuan */
+  .my-skills {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar {
+    height: 20px;
+    background-color: lightgray;
+  }
+  
+  /* Untuk harga */
+  .plan {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .basic, .pro {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .basic, .pro {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .basic:hover, .pro:hover {
+    border-color: #666;
+  }
+  
+  /* Untuk footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
   }
 }
