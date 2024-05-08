@@ -425,6 +425,7 @@ ul {
     .navigation {
       flex-direction: column;
       align-items: center;
+      min-width: 480px;
     }
   
     .navigation > nav {
@@ -434,7 +435,9 @@ ul {
     .logo {
       margin: 0;
     }
-  
+  #home {
+    min-width: 480px;
+  }
     .header > h1 {
       font-size: 24px;
     }
@@ -446,6 +449,12 @@ ul {
     .items {
       margin: 0;
     }
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      overflow-wrap: break-word;
+  }
   
     .item1 img {
       width: 100%;
@@ -464,20 +473,29 @@ ul {
     .profil {
       padding: 20px;
       word-wrap: break-word;
+      min-width: 480px;
     }
   
     .contact {
       margin: 0;
+      min-width: 480px;
     }
-  
+    .my-skills {
+      min-width: 480px;
+    }
     .plan {
       padding: 10px;
+      min-width: 480px;
     }
   
     .basic,
     .pro {
       width: 100%;
       margin: 0 0 10px 0;
+    }
+
+    .footer {
+      min-width: 480px;
     }
   }
   
