@@ -1,4 +1,5 @@
 // ini javascript
+// Slideshow otomatis
 window.onload = function () {
   const images = [
     "assets/projek.png",
@@ -24,7 +25,7 @@ window.onload = function () {
 
   function showSlide() {
     if (images.length === 0) {
-      console.error("No images found in the 'images' array!");
+      console.error("Tidak ditemukan gambar!");
       return;
     }
 
@@ -44,6 +45,7 @@ window.onload = function () {
   setInterval(showSlide, 3000);
 };
 
+//Validasi JS pada Form
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     var name = document.getElementById('name').value;
@@ -51,24 +53,22 @@ window.onload = function () {
     var subject = document.getElementById('subject').value;
 
     if (name === '' || email === '' || subject === '') {
-      // Jika ada input yang kosong
       document.getElementById('name').classList.add('error');
       document.getElementById('email').classList.add('error');
       document.getElementById('subject').classList.add('error');
       alert('Mohon lengkapi form');
     } else {
-      // Jika semua input terisi
       document.getElementById('name').classList.remove('error');
       document.getElementById('email').classList.remove('error');
       document.getElementById('subject').classList.remove('error');
       alert('Request telah terkirim, terima kasih karena memilih Als');
-      // Melakukan pengiriman data formulir (untuk simulasi, saya tidak akan mengirimkan data ke server)
       setTimeout(function() {
         document.getElementById('contact-form').reset();
-      }, 5000); // Mengatur timeout untuk menghapus pesan setelah 2 detik
+      }, 5000);
     }
   });
 
+// Scroll otomatis
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('button');
   buttons.forEach(button => {
